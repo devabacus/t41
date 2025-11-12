@@ -3,14 +3,14 @@ project:
   name: "t41"
   
 server:
-  ip: "176.124.208.46"
+  ip: "188.225.10.218"
   http_port: "80:80"
   https_port: "443:443"
   domain: "my-points.ru"
   subdomain:
-    api: "api4"
-    web: "web4"
-    insights: "insights4"
+    api: "api41"
+    web: "web41"
+    insights: "insights41"
   email: "frolprank@gmail.com"
   
 database:

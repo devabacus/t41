@@ -52,7 +52,8 @@ kubectl get svc t41-server-service -o yaml
 kubectl logs -f -l app=t41-server
 
 #kubectl logs serverpod-migration-job-ts3-6llg9
-
+kubectl delete namespace ingress-nginx
+helm install ingress-nginx ingress-nginx/ingress-nginx --namespace ingress-nginx --create-namespace --set controller.service.type=LoadBalancer
 # Тестируем endpoint для получения списка TestData
 Invoke-WebRequest -Uri "https://api5.my-points.ru/" -Method POST -ContentType "application/json" -Body '{"endpoint":"testData","method":"listTestDatas","params":{}}'
 
