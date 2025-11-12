@@ -1,0 +1,30 @@
+# manifest: startProject
+project:
+  name: "t41"
+  
+server:
+  ip: "176.124.208.46"
+  http_port: "80:80"
+  https_port: "443:443"
+  domain: "my-points.ru"
+  subdomain:
+    api: "api4"
+    web: "web4"
+    insights: "insights4"
+  email: "frolprank@gmail.com"
+  
+database:
+  host: "192.168.0.6"
+  port: "5432"
+  name: "t41_db"
+  user: "t41_user"  
+  
+reddis:
+  host: "192.168.0.7"
+  port: "6379"
+  user: "default"
+  
+deployment:
+  organization: "devabacus"
+  ssh_user: "serverpod"
+
